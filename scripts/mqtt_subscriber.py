@@ -3,7 +3,7 @@ from influxdb_client import InfluxDBClient, Point
 from influxdb_client.client.write_api import SYNCHRONOUS
 
 # MQTT settings
-broker = "192.168.178.25"
+broker = "test.mosquitto.org"
 port = 1883
 topic = "sensors/+/temperature"  # Wildcard subscription
 

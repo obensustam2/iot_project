@@ -3,7 +3,7 @@ import random
 import time
 
 # MQTT broker settings
-broker = "192.168.178.25"  # Replace with your Pi's actual IP
+broker = "test.mosquitto.org"
 port = 1883
 
 # Topic
