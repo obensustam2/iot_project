@@ -14,16 +14,8 @@ influx_org = "DIY Team"
 influx_bucket = "_monitoring"  
 
 # Initialize InfluxDB client
-influx_client = InfluxDBClient(
-    url=influx_url,
-    token=influx_token,
-    org=influx_org
-)
+influx_client = InfluxDBClient(url=influx_url,token=influx_token,org=influx_org)
 write_api = influx_client.write_api(write_options=SYNCHRONOUS)
-
-for bucket in influx_client.buckets_api().find_buckets().buckets:
-    print(bucket.name)
-
 
 # MQTT callbacks
 def on_connect(client, userdata, flags, rc):
