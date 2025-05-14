@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # InfluxDB v2 settings
 influx_url = "https://us-east-1-1.aws.cloud2.influxdata.com"
-influx_token = "4HjjupLgkVgu9BabBEmNVWUprVLHmXZPRr1mokHFmmEvKiaaz1P_NyFMWLO9eOgihBNFuDDSYcq6Efyn8_cjdQ=="
+influx_token = "YOUR_TOKEN"
 influx_org = "DIY Team"
 influx_bucket = "_monitoring"
 
